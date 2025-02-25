@@ -73,6 +73,11 @@ Now that the circuit is built, take the voltage divider with both positive and n
 | 14      | 13.99     | -13.64 |
 | 15      | 14.98     | -13.63 |
 
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/VivsVo%20graph.jpg" width="500">
+  <br>
+  <b>Figure 3:</b> Vo vs. Vi Graph
+</p>
 
 Now that data has been collected, the expected gain can be calculated given the resistor values in the circuit in Figure 1. Gain is calculated as follows:
 
@@ -144,6 +149,22 @@ The next circuit that will be constructed is an integrating op amp. It should lo
 
 Once this circuit is constructed, connect the function generator to the circuit and take pictures for the input waveforms of 4kHz, 1Vp-p, sine, square, and triangle waves. Change the voltage and repeat the process. Note any differences found while conducting the experiment. 
 
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Fig6%20Circuit%205%20reading.jpg" width="500">
+  <br>
+  <b>Figure 7:</b> Oscilloscope reading for Circuit 5
+</p>
+
+The last circuit that will be built is a differentiating op amp circuit. This circuit should look as follows:
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Fig8%20Circuit%206.jpg" width="500">
+  <br>
+  <b>Figure 8:</b> Circuit 6: Differentiating op-amp Circuit
+</p>
+
+To complete this lab, connect the function generator to the circuit and take photos of the input and output waveforms for the 1kHz, 2Vp-p, sine, square, and triangle waves. Like the last circuit, change the voltage and note any changes. Also with this circuit, change the frequency and note any changes. 
+
 ---
 
 ## Results
@@ -152,67 +173,24 @@ This section shows the data and outcomes obtained during the lab work.
 
 ### Data and Outcome
 
-#### Tables
-**Table 1:** Expected Resistance vs. Measured Resistance
-| Expected Resistance | Measured Resistance |
-|---------------------|---------------------|
-| 1 kΩ                | 0.981k              |
-| 4.7 kΩ              | 4.65k               |
-| 8.2 kΩ              | 8.04k               |
-| 22 kΩ               | 21.48k              |
-| First 68 kΩ         | 66.8k               |
-| Second 68 kΩ        | 66.9k               |
-| 220 kΩ              | 217.5k              |
-| 330 kΩ              | 326k                |
-| 1.5 MΩ              | 1.5M                |
-
-**Table 2:** Expected Capacitance vs. Measured Capacitance
-| Expected Capacitance | Measured Capacitance |
-|----------------------|----------------------|
-| 1nF                  | 1.3nF                |
-| 100 nF               | 106.6 nF             |
-
-**Table 3:** Vi vs. Vo data
-| Goal Vi | Vi Actual | Vo (V) |
-|---------|-----------|--------|
-| -15     | -15.01    | 14.26  |
-| -14     | -14.03    | 14.08  |
-| -12     | -12.03    | 12.08  |
-| -5      | -5.006    | 5.031  |
-| 0       | 0.015     | -0.015 |
-| 5       | 4.998     | -5.01  |
-| 12      | 12.01     | -12.05 |
-| 14      | 13.99     | -13.64 |
-| 15      | 14.98     | -13.63 |
-
-<p align="center">
-  <img src="https://github.com/faco229/Lab-4-Report/blob/main/VivsVo%20graph.jpg" width="500">
-  <br>
-  <b>Figure 3:</b> Vo vs. Vi Graph
-</p>
-
-
-#### Drawings
-*Include annotated drawings or additional diagrams if needed.*
-
-#### Pictures
-*Embed or link to images that illustrate the results.*
 
 ---
 
 ## Discussion
 **Part 1**
 a.	Compare the performance of each amplifier circuit to its expected theoretical performance with regard to gain.
-b.	Comment on the limits of op-amp circuits with respect to maximum output voltage.
-c.	Are the LM741 op amps symmetric i.e. does the positive voltage performance equal the negative voltage performance?
+The theoretical performance of a non-inverting op-amp circuit is expected to be -1, while the gain of the first circuit was -0.9985.
 
+b.	Comment on the limits of op-amp circuits with respect to maximum output voltage.
+Once an op-amp circuit reaches its maximum output voltage, the op-amp enters saturation and starts to output its maximum voltage. At this point, it no longer amplifies the input voltage exponentially.
+
+c.	Are the LM741 op amps symmetric i.e. does the positive voltage performance equal the negative voltage performance?
+The LM741 op-amps are symmetric, displaying equal performance for both positive and negative voltages in the first circuit. On the other hand, when the voltage drops below -12V or rises above 12V, the input voltage (Vi) no longer equals the output voltage (Vo).
 
 **Part 2**
 **Did the integrating and differentiating circuits perform the mathematical operations expected?  Explain. **
 
 Yes, the integrating and differentiating circuits behaved as expected. Comparing the square wave to the triangular wave, it is clear that integrating the square wave returns a triangular wave. Furthermore, the integral of the triangular wave is a more traditional sinusoidal wave. When functioning as integrators, a square wave input results in a triangular wave output. Conversely, when used as differentiators, a triangular wave input produces a square wave output. Additionally, with appropriate circuit design, an op amp can also amplify and display the shape of a sinusoidal wave input.
-
-
 
 ---
 
