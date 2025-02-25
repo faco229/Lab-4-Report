@@ -137,6 +137,13 @@ Next, construct the voltage follower seen below. Should look as follows:
   <b>Figure 5:</b> Circuit 4: Voltage Follower
 </p>
 
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Circuit%204%20built.jpg" width="500">
+  <br>
+  <b>Figure 6:</b> Circuit 4: Built
+</p>
+
+
 Once the circuit is built, set the function generator to an amplitude of 1V and a frequency of 2kHz. The goal is to see that the input voltage on the circuit is equal to the output voltage. With the oscilloscope, this can be checked. Record the findings. Estimate the gain. After, increase the frequency to its limit and record the results. 
 
 The next circuit that will be constructed is an integrating op amp. It should look as follows:
@@ -144,15 +151,23 @@ The next circuit that will be constructed is an integrating op amp. It should lo
 <p align="center">
   <img src="https://github.com/faco229/Lab-4-Report/blob/main/Fig6%20Circuit%205.jpg" width="500">
   <br>
-  <b>Figure 6:</b> Circuit 5: Integrating Op Amp
+  <b>Figure 7:</b> Circuit 5: Integrating Op Amp
 </p>
+
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Circuit%205%20built.jpg" width="500">
+  <br>
+  <b>Figure 8:</b> Circuit 5: Built
+</p>
+
 
 Once this circuit is constructed, connect the function generator to the circuit and take pictures for the input waveforms of 4kHz, 1Vp-p, sine, square, and triangle waves. Change the voltage and repeat the process. Note any differences found while conducting the experiment. 
 
 <p align="center">
   <img src="https://github.com/faco229/Lab-4-Report/blob/main/Fig6%20Circuit%205%20reading.jpg" width="500">
   <br>
-  <b>Figure 7:</b> Oscilloscope reading for Circuit 5
+  <b>Figure 9:</b> Oscilloscope reading for Circuit 5
 </p>
 
 The last circuit that will be built is a differentiating op amp circuit. This circuit should look as follows:
@@ -160,7 +175,13 @@ The last circuit that will be built is a differentiating op amp circuit. This ci
 <p align="center">
   <img src="https://github.com/faco229/Lab-4-Report/blob/main/Fig8%20Circuit%206.jpg" width="500">
   <br>
-  <b>Figure 8:</b> Circuit 6: Differentiating op-amp Circuit
+  <b>Figure 10:</b> Circuit 6: Differentiating op-amp Circuit
+</p>
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Circuit%206%20built.jpg" width="500">
+  <br>
+  <b>Figure 11:</b> Circuit 6: Built
 </p>
 
 To complete this lab, connect the function generator to the circuit and take photos of the input and output waveforms for the 1kHz, 2Vp-p, sine, square, and triangle waves. Like the last circuit, change the voltage and note any changes. Also with this circuit, change the frequency and note any changes. 
