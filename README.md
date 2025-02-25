@@ -28,7 +28,26 @@ First, to repeat the lab, the following equipment will be needed:
 •	An LM741 Op Amp
 •	A 10 kΩ trimmer potentiometer
 
-Before we begin, Op amps must be properly powered. The operational amplifiers in this lab will need positive and negative power voltages to work correctly. This will be achieved by using two separate power supplies where the positive output of one is connected to the ground. Check the polarity of power supplies before connecting to the op-amps. Be sure to measure the actual values of all resistors and capacitors to use in theoretical calculations. This practice should be followed for all components throughout the rest of the semester. 
+Before we begin, Op amps must be properly powered. The operational amplifiers in this lab will need positive and negative power voltages to work correctly. This will be achieved by using two separate power supplies where the positive output of one is connected to the ground. Check the polarity of power supplies before connecting to the op-amps. Be sure to measure the actual values of all resistors and capacitors to use in theoretical calculations. This practice should be followed for all components throughout the rest of the semester. The measurements are compiled below:
+
+**Table 1:** Expected Resistance vs. Measured Resistance
+| Expected Resistance | Measured Resistance |
+|---------------------|---------------------|
+| 1 kΩ                | 0.981k              |
+| 4.7 kΩ              | 4.65k               |
+| 8.2 kΩ              | 8.04k               |
+| 22 kΩ               | 21.48k              |
+| First 68 kΩ         | 66.8k               |
+| Second 68 kΩ        | 66.9k               |
+| 220 kΩ              | 217.5k              |
+| 330 kΩ              | 326k                |
+| 1.5 MΩ              | 1.5M                |
+
+**Table 2:** Expected Capacitance vs. Measured Capacitance
+| Expected Capacitance | Measured Capacitance |
+|----------------------|----------------------|
+| 1nF                  | 1.3nF                |
+| 100 nF               | 106.6 nF             |
 
 The first circuit that will be built in the lab should look like this:
 
@@ -39,14 +58,28 @@ The first circuit that will be built in the lab should look like this:
 </p>
 
 
-Now that the circuit is built, take the voltage divider with both positive and negative voltage supplies and begin collecting Vo and Vi data by adjusting the potentiometer to change the input voltage. When doing so, record a minimum of nine Vi values from going to negative to positive saturation points. To do so, turn the potentiometer until Vi = -15, -14, -12, -5, 0, 5, 12, 14, 15, and measure Vo at each of those spots as well. Keep in mind, these Vi values are what are referred to as "Goal Vi" values in Table 3. Compare the results in a table and demonstrate them on a graph. When illustrating the graph, include the R^2 value as a strength indicator. The closer to one the better.
+Now that the circuit is built, take the voltage divider with both positive and negative voltage supplies and begin collecting Vo and Vi data by adjusting the potentiometer to change the input voltage. When doing so, record a minimum of nine Vi values ranging from  negative to positive saturation points. To do so, turn the potentiometer until Vi = -15, -14, -12, -5, 0, 5, 12, 14, 15, and measure Vo at each of those spots as well. Keep in mind, these Vi values are what are referred to as "Goal Vi" values in Table 3. Compare the results in a table and demonstrate them on a graph. When illustrating the graph, include the R^2 value as a strength indicator. The closer to one the better.
 
-Now that data has been collected, the expected gain can be calculated given the resistor values in the circuit above. Gain is calculated as follows:
+**Table 3:** Vi vs. Vo data
+| Goal Vi | Vi Actual | Vo (V) |
+|---------|-----------|--------|
+| -15     | -15.01    | 14.26  |
+| -14     | -14.03    | 14.08  |
+| -12     | -12.03    | 12.08  |
+| -5      | -5.006    | 5.031  |
+| 0       | 0.015     | -0.015 |
+| 5       | 4.998     | -5.01  |
+| 12      | 12.01     | -12.05 |
+| 14      | 13.99     | -13.64 |
+| 15      | 14.98     | -13.63 |
+
+
+Now that data has been collected, the expected gain can be calculated given the resistor values in the circuit in Figure 1. Gain is calculated as follows:
 
 <p align="center">
   <img src="https://github.com/faco229/Lab-4-Report/blob/main/Eq.1.jpg" width="500">
   <br>
-  <b>Equation 1:</b> Gain
+  <b>Equation 1:</b> Gain for Circuit 1
 </p>
 
 Having calculated the expected gain from the first circuit and compared it to the graph now it is okay to move on to the next circuit. The next circuit should look as follows:
@@ -57,14 +90,59 @@ Having calculated the expected gain from the first circuit and compared it to th
   <b>Figure 2:</b> Circuit 2
 </p>
 
-### Schematics
-*Include schematics, diagrams, or links to schematic files.*
+Once the circuit is constructed, set the function generator to 100 mV and 2kHz and connect the nodes to Vi. With the oscilloscope, plot Vi in channel 1 and Vo in channel 2. The results should look as follows:
 
-### Drawings
-*Add drawings or sketches that illustrate the design and process.*
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Fig3%20Circuit2%20Wave.jpg" width="500">
+  <br>
+  <b>Figure 3:</b> Circuit 2 Oscilloscope Reading
+</p>
 
-### Pictures
-*Embed or link to pictures documenting the lab setup, process, or equipment used.*
+Like the last circuit, the gain is trying to be measured. This time with the oscilloscope. As follows:
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Equation%202%20Gain.jpg" width="500">
+  <br>
+  <b>Equation 2:</b> Gain for Circuit 2
+</p>
+
+With this much gain, it is apparent that there is an error in the measurement somewhere. Anyway, the next circuit that will be built is like the previous however instead of the 8.2k resistor it will be replaced with a 1k resistor and should look as follows:
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Fig4%20Circuit%203.jpg" width="500">
+  <br>
+  <b>Figure 4:</b> Circuit 3
+</p>
+
+This circuit is a high gain op amp circuit. For this part of the experiment the function generator should be set to 10 mv and 2kHz. Calculate the gain using the oscilloscope.
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Equation%203.jpg" width="500">
+  <br>
+  <b>Equation 3:</b> Gain for Circuit 3
+</p>
+
+Again, with this much gain, it is apparent that there is an error in the measurement somehow. Gain shouldn’t be this high. 
+
+Next, construct the voltage follower seen below. Should look as follows:
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Fig.5%20Circuit%204.jpg" width="500">
+  <br>
+  <b>Figure 5:</b> Circuit 4: Voltage Follower
+</p>
+
+Once the circuit is built, set the function generator to an amplitude of 1V and a frequency of 2kHz. The goal is to see that the input voltage on the circuit is equal to the output voltage. With the oscilloscope, this can be checked. Record the findings. Estimate the gain. After, increase the frequency to its limit and record the results. 
+
+The next circuit that will be constructed is an integrating op amp. It should look as follows:
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Fig6%20Circuit%205.jpg" width="500">
+  <br>
+  <b>Figure 6:</b> Circuit 5: Integrating Op Amp
+</p>
+
+Once this circuit is constructed, connect the function generator to the circuit and take pictures for the input waveforms of 4kHz, 1Vp-p, sine, square, and triangle waves. Change the voltage and repeat the process. Note any differences found while conducting the experiment. 
 
 ---
 
@@ -130,8 +208,9 @@ c.	Are the LM741 op amps symmetric i.e. does the positive voltage performance eq
 
 
 **Part 2**
-Did the integrating and differentiating circuits perform the mathematical operations expected?  Explain. 
+**Did the integrating and differentiating circuits perform the mathematical operations expected?  Explain. **
 
+Yes, the integrating and differentiating circuits behaved as expected. Comparing the square wave to the triangular wave, it is clear that integrating the square wave returns a triangular wave. Furthermore, the integral of the triangular wave is a more traditional sinusoidal wave. When functioning as integrators, a square wave input results in a triangular wave output. Conversely, when used as differentiators, a triangular wave input produces a square wave output. Additionally, with appropriate circuit design, an op amp can also amplify and display the shape of a sinusoidal wave input.
 
 
 
