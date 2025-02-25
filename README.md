@@ -10,20 +10,38 @@ Faith Cox & Quinn Rison
 
 ## Introduction / Summary
 
+The purpose of this lab is to learn how to use operational amplifiers (Op Amps) to construct basic amplifier and signal conditioning circuits, and to explore the performance limitations of these devices. Various circuits will be built, including inverting amplifiers, low, moderate, and high gain circuits, a voltage follower, and integrating and differentiating circuits. Important characteristics of these circuits will be measured, and signals will be observed using an oscilloscope.
+
 ### Project Goal
-Describe the main goal of your project here.
-
-### Summary of Work Performed
-Provide a brief overview (one or two paragraphs) outlining what work was done during the lab.
-
-### Summary of Outcome
-Summarize the outcomes of the lab, highlighting key results and observations.
-
 ---
 
 ## Methods / Tests
 
-This section should include all the engineering documentation necessary to repeat the project.
+First, to repeat the lab, the following equipment will be needed:
+•	A Bread Board
+•	Two DC Power supplies
+•	A Digital Multimeter
+•	A Function Generator
+•	An Oscilloscope
+•	Resistors: 1 kΩ, 4.7 kΩ, 8.2 kΩ, 22 kΩ, two 68 kΩ, 220 kΩ, 330 kΩ, 1.5 MΩ
+•	Capacitors: 1nF and 100 nF
+•	An LM741 Op Amp
+•	A 10 kΩ trimmer potentiometer
+
+Before we begin, Op amps must be properly powered. The operational amplifiers in this lab will need positive and negative power voltages to work correctly. This will be achieved by using two separate power supplies where the positive output of one is connected to the ground. Check the polarity of power supplies before connecting to the op-amps. Be sure to measure the actual values of all resistors and capacitors to use in theoretical calculations. This practice should be followed for all components throughout the rest of the semester. 
+
+The first circuit that will be built in the lab should look like this:
+
+**FIG1.CIRC1**
+
+Now that the circuit is built, take the voltage divider with both positive and negative voltage supplies and begin collecting Vo and Vi data by adjusting the potentiometer to change the input voltage. When doing so, record a minimum of nine Vi values from going to negative to positive saturation points. To do so, turn the potentiometer until Vi = -15, -14, -12, -5, 0, 5, 12, 14, 15, and measure Vo at each of those spots as well. Compare the results in a table and demonstrate them on a graph. When illustrating the graph, include the R^2 value as a strength indicator. The closer to one the better.
+
+Now that data has been collected, the expected gain can be calculated given the resistor values in the circuit above. Gain is calculated as follows:
+**EQ1**
+
+Having calculated the expected gain from the first circuit and compared it to the graph now it is okay to move on to the next circuit. The next circuit should look as follows:
+
+**FIG.2CIRCUIT2**
 
 ### Schematics
 *Include schematics, diagrams, or links to schematic files.*
@@ -41,7 +59,6 @@ This section should include all the engineering documentation necessary to repea
 This section shows the data and outcomes obtained during the lab work.
 
 ### Data and Outcome
-Provide a description of the data collected, observations made, or results obtained.
 
 #### Tables
 **Table 1:** Expected Resistance vs. Measured Resistance
