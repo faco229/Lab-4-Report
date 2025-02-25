@@ -184,15 +184,28 @@ The last circuit that will be built is a differentiating op amp circuit. This ci
   <b>Figure 11:</b> Circuit 6: Built
 </p>
 
-To complete this lab, connect the function generator to the circuit and take photos of the input and output waveforms for the 1kHz, 2Vp-p, sine, square, and triangle waves. Like the last circuit, change the voltage and note any changes. Also with this circuit, change the frequency and note any changes. 
+To complete this lab, connect the function generator to the circuit and take photos of the input and output waveforms for the 1kHz, 2Vp-p, sine, square, and triangle waves. Like the last circuit, change the voltage and note any changes. Also with this circuit, change the frequency and note any changes. See Figures 12-14 below in the 'Results' section of this report.
 
 ---
 
 ## Results
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Sine%20Wave.jpeg" width="500">
+  <br>
+  <b>Figure 12:</b> Sine Wave
+</p>
 
-This section shows the data and outcomes obtained during the lab work.
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Triangle%20wave.jpeg" width="500">
+  <br>
+  <b>Figure 13:</b> Triangular Wave
+</p>
 
-### Data and Outcome
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Square%20wave.jpeg" width="500">
+  <br>
+  <b>Figure 14:</b> Square Wave
+</p>
 
 
 ---
@@ -217,11 +230,14 @@ Yes, the integrating and differentiating circuits behaved as expected. Comparing
 
 ## Conclusion
 
-Summarize the most important things learned from the lab. Provide one or two paragraphs that encapsulate:
-- The key findings.
-- Lessons derived from the work.
-- Implications for future work or further investigation.
+This lab has provided valuable insights into the design and operation of various op-amp circuits. The experiments confirmed that the measured gains should resemble the theoretical values—demonstrated by the nearly unity gain of the inverting amplifier circuit. Additionally, the lab verified that the LM741 op amps exhibit symmetrical performance for both positive and negative voltages, within saturation limits. The successful application of voltage followers, integrators, and differentiators further underlines the versatility of op-amps in signal conditioning, even as minor measurement discrepancies highlighted the challenges associated with high gain circuits.
 
+The work emphasizes the importance of precision in component selection and calibration to minimize errors in circuit performance. The observed limitations offer clear lessons for future experiments, suggesting that enhanced calibration procedures and possibly the use of alternative op-amp models could yield more accurate results. Overall, the lab not only reinforced fundamental concepts in analog circuit designs but also laid the groundwork for more advanced investigations into error mitigation and circuit optimization in future work.
+
+
+
+**Citations**
+ChatGPT. (2025). Assistance in formatting lab report to Markdown/LaTeX. OpenAI. Retrieved from https://openai.com
 ---
 
 *End of Lab Report*
