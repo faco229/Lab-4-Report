@@ -32,16 +32,30 @@ Before we begin, Op amps must be properly powered. The operational amplifiers in
 
 The first circuit that will be built in the lab should look like this:
 
-**FIG1.CIRC1**
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Fig1.Circuit1.jpg" width="500">
+  <br>
+  <b>Figure 1:</b> Circuit 1
+</p>
+
 
 Now that the circuit is built, take the voltage divider with both positive and negative voltage supplies and begin collecting Vo and Vi data by adjusting the potentiometer to change the input voltage. When doing so, record a minimum of nine Vi values from going to negative to positive saturation points. To do so, turn the potentiometer until Vi = -15, -14, -12, -5, 0, 5, 12, 14, 15, and measure Vo at each of those spots as well. Keep in mind, these Vi values are what are referred to as "Goal Vi" values in Table 3. Compare the results in a table and demonstrate them on a graph. When illustrating the graph, include the R^2 value as a strength indicator. The closer to one the better.
 
 Now that data has been collected, the expected gain can be calculated given the resistor values in the circuit above. Gain is calculated as follows:
-**EQ1**
+
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Eq.1.jpg" width="500">
+  <br>
+  <b>Equation 1:</b> Gain
+</p>
 
 Having calculated the expected gain from the first circuit and compared it to the graph now it is okay to move on to the next circuit. The next circuit should look as follows:
 
-**FIG.2CIRCUIT2**
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/Fig2.Circuit2.jpg" width="500">
+  <br>
+  <b>Figure 2:</b> Circuit 2
+</p>
 
 ### Schematics
 *Include schematics, diagrams, or links to schematic files.*
@@ -93,7 +107,11 @@ This section shows the data and outcomes obtained during the lab work.
 | 14      | 13.99     | -13.64 |
 | 15      | 14.98     | -13.63 |
 
-
+<p align="center">
+  <img src="https://github.com/faco229/Lab-4-Report/blob/main/VivsVo%20graph.jpg" width="500">
+  <br>
+  <b>Figure 3:</b> Vo vs. Vi Graph
+</p>
 
 
 #### Drawings
